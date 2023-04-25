@@ -1,0 +1,25 @@
+<p>ng-for works!</p>
+<h2>ngfor comp</h2>
+<div *ngFor="let item of name1">{{item.aaa}}</div>
+
+<h2>kullanıcılar</h2>
+
+<div *ngFor="let user of userList">{{user.id}} - {{user.name}} - {{user.email}}</div>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>email</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let users of userList">
+            <td>{{users.id}}</td>
+            <td>{{users.name}}</td>
+            <td>{{users.email}}</td>
+        </tr>
+    </tbody>
+</table>

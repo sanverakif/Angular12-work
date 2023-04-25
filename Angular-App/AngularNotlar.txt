@@ -1,0 +1,34 @@
+Google geliştirdiği açık kaynak kodlu SPA geliştirilen js kütüphanesidir. Oop felsefesinde uygulama geliştirmemizi ve kod yazmamızı sağlar. 
+Erişim belirteçleri vs.
+
+
+ng new "proje ismi"
+cd "proje ismi"
+ng serve -o | --open
+ng generate component "component ismi"
+ng generate class "class ismi"
+ng generate directive "directives ismi"  : bulundukları taga özellik ve yeni davranışlar getirir. tagı ezer.
+tsconfig.json: ts kodlarını jse derlendiği dosyadır.
+package.json : npm dosyasıdır. 
+devDependencies: uygulama geliştirmekle ilgili paketlerin kütüphanelerin eklendiği yerdir. 
+dependencies: uygulamanın çalışmasıyla ilgili paketlerin tanımlandığı yerdir.
+angular.json: uygulamayla ilgili ayarların yapıldığı yerdir.
+
+Angular çalıştırma mantığı=> TypeScript derlendiği anda js diline dönüştürülür. Sonra tarayıcıda yorumlanıyor.
+Ctor: Classtan nesne örneği aldığımızda ilk tetiklenir.
+ngOnChanges: Componentte her değişiklik olduğunda tetiklenen methottur.
+Değişkenleri class seviyesinde  türünü tanımlamaya gerek yok ama method seviyesinde tanımlanmalıdır.
+
+TypeScript
+Tip güvenli, oop uyan, derlenen bir dildir.
+Başka bir classdan miras almak için extends keywordu kullanılır.
+Super(): Miras alınan bir sınıfta ctorda parametre varsa doldurmak gerekir. Kalıtım alından sınıfın constructorunu çağırır.
+
+Protected: Miras alınan sınıfın proplarına erişebilir fakat nesne kopyası çıkartılınca protected olarak işaretlenen propa ulaşamaz. Nesne örneği alındığında gelmez.
+
+Directives: Componentlere benzerler. Viewları yoktur. @Directive decorater kullarılır. Selectora sahip olmalıdır.
+Yapısal directive: ngfor-ngif-ngswitch
+Attribute directive: Dinamik olarak kullandığımız özelliklerdir. ngclass-ngstyle-ngmodel
+
+
+npm vb çağırıyor

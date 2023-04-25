@@ -1,0 +1,1 @@
+subscribe: datalara abone olur, erişir ve datalar gelir.
