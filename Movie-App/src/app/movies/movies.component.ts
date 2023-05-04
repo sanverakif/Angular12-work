@@ -12,12 +12,14 @@ export class MoviesComponent implements OnInit {
   movies: Movie[];
   populerMovies: Movie[];
   movieRepository: MovieRepository;
+  today = new Date();
 
   constructor() {
     this.movieRepository = new MovieRepository();
     this.movies = this.movieRepository.getMovies();
     this.populerMovies = this.movieRepository.getPopulerMovies();
   }
+
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }

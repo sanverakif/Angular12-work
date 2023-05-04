@@ -7,37 +7,47 @@ export class MovieRepository {
       {
         id: 1,
         title: 'film 1',
-        description: 'film 1 desc',
+        description:
+          'Lorem,',
         imgUrl: '2.jpeg',
         isPopuler: true,
+        datePublish: new Date(2023, 5, 4),
       },
       {
         id: 2,
         title: 'film 2',
-        description: 'film 2 desc',
+        description:
+          'Lorem, ipsum',
         imgUrl: '2.jpeg',
         isPopuler: false,
+        datePublish: new Date(2023, 5, 4),
       },
       {
         id: 3,
         title: 'film 3',
-        description: 'film 3 desc',
+        description:
+          'Lorem, ipsum dolor',
         imgUrl: '3.jpeg',
         isPopuler: false,
+        datePublish: new Date(2023, 5, 4),
       },
       {
         id: 4,
         title: 'film 4',
-        description: 'film 4 desc',
+        description:
+          'Lorem, ipsum dolor sit',
         imgUrl: '4.jpeg',
         isPopuler: true,
+        datePublish: new Date(2023, 5, 4),
       },
       {
         id: 4,
         title: 'film 4',
-        description: 'film 4 desc',
+        description:
+          'Lorem, ipsum dolor sit amet',
         imgUrl: '4.jpeg',
         isPopuler: true,
+        datePublish: new Date(2023, 5, 4),
       },
     ];
   }

@@ -5,10 +5,10 @@
     {{ movies.length }} film bulundu.
   </div>
 
-  <ng-template
+  <!-- <ng-template
     [ngTemplateOutlet]="movieList2"
     [ngTemplateOutletContext]="{ movies: populerMovies }"
-  ></ng-template>
+  ></ng-template> -->
   <ng-template [ngTemplateOutlet]="movieList1"></ng-template>
 </div>
 
@@ -28,8 +28,9 @@
       </div>
       <div class="col-md-9">
         <div class="card-body">
-          <h2 class="card-title">{{ item.title }}</h2>
-          <p class="card-text">{{ item.description }}</p>
+          <h2 class="card-title">{{ item.title | titlecase }}</h2>
+          <p class="card-text">{{ item.description | summary : 15 }}</p>
+          <p class="card-text">{{ item.datePublish | date : "dd/MM/yy" }}</p>
           <button class="btn btn-sm btn-outline-primary">Details</button>
         </div>
       </div>
@@ -37,6 +38,35 @@
   </div>
 </ng-template>
 
+<!-- <h4>lower-upper-title pipe</h4>
+<p>{{ "akif" | lowercase }}</p>
+<p>{{ "emre" | uppercase }}</p>
+<p>{{ "sanver" | titlecase }}</p>
+
+<h4>date pipe</h4>
+<p>{{ today }}</p>
+<p>{{ today | date }}</p>
+<p>{{ today | date : "fullDate" }}</p>
+<p>{{ today | date : "medium" }}</p>
+<p>{{ today | date : "shortDate" }}</p>
+<p>{{ today | date : "h:mm:ss a" }}</p>
+
+<h4>decimal pipe</h4>
+<p>{{ 2.22222 | number }}</p>
+<p>{{ 2.22222 | number : "1.0-3" }}</p>
+<p>{{ 2.22222 | number : "1.0-3" }}</p>
+
+<h4>currency pipe</h4>
+<p>{{ 395 | currency }}</p>
+<p>{{ 395 | currency : "TRY" }}</p>
+<p>{{ 395 | currency : "EUR" }}</p>
+
+<h4>percent pipe</h4>
+<p>{{ 0.259 | percent }}</p>
+<p>{{ 0.0350 | percent }}</p>
+<p>{{ 1.26 | percent : "2.2-4" }}</p> -->
+
+<!-- 
 <ng-template #movieList2 let-filmler="movies">
   <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
     <div class="col" *ngFor="let item of filmler">
@@ -71,4 +101,4 @@
       </div>
     </div>
   </div>
-</ng-template>
+</ng-template> -->

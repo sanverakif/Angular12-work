@@ -8,6 +8,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movies/movie/movie.component';
 import { DetailsComponent } from './movie/details/details.component';
 import { FooterComponent } from './footer/footer.component';
+import { SummaryPipe } from './pipes/summaryPipe';
 
 @NgModule({
   //kullanıcağımız componentleri ekliyoruz.
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     MoviesComponent,
     MovieComponent,
     DetailsComponent,
-    FooterComponent
+    FooterComponent,
+    SummaryPipe
   ],
   //modul dahil etmek istediğimizde kullanırız. FormsModule/Routing yapılanması
   imports: [
